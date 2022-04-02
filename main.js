@@ -3,7 +3,7 @@ let s = 60
 let m = 60
 let h = 24
 
-let contain = document.querySelector("div");
+let contain = document.querySelector(".js-contain");
 
 function count(){
     if(h == 0 && m == 0 && s == 0){
