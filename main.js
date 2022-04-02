@@ -1,22 +1,32 @@
-// 1
-let date = new Date().getTime();
 
-console.log(date);
+let s = 60
+let m = 60
+let h = 24
 
-// 2
-const developer = {
-    name : "Tochi",
-    location : "Nigeria",
-    age : 22,
-    stack : "fullstack",
-    experience : 4,
-    hobby : "gaming"
-};
-let name = developer.name;
-let locate = developer.location;
-let age = developer.age;
-let stack = developer.stack;
-let experience = developer.experience;
-let hobby = developer.hobby;
+let contain = document.querySelector("div");
 
-console.log(`My name is ${name}, I'm a ${stack} developer from ${locate} with ${experience}yrs of experience. I'm ${age}yrs old and i love ${hobby}.`);
+function count(){
+    if(h == 0 && m == 0 && s == 0){
+        alert("nice one");
+        clearInterval(x)
+        
+    } else if(h!== 0 && m !== 0 && s== 0){
+        m --
+        s = 59
+
+    }else if(h!==0 && m == 0 && s==0){
+        h--
+        m = 59
+        s = 59
+    }else if (h == 0 && m !== 0 && s == 0){
+        m--
+        s = 59
+    }else{
+        s--
+    }
+    contain.innerText = `${h}hr ${m}m ${s}s`
+}
+let x = setInterval(count, 1000)
+
+
+
