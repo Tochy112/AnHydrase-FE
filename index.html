@@ -77,16 +77,19 @@
 
 
 <script>
-    
-   //assignment 1
+
+    //CSS DOM
+    let header = document.querySelector('.header')
+    header.style.background = 'red';
+
+   
+    //PREVIOUS ASSIGNMENT
+
+    //Get the parent class and change the h3 elements to "About Us" 
     let parent = document.querySelector('.parent');
     parent.querySelector('h3').innerHTML = 'about us';
     
-    //assignment 2
-    let header = document.querySelector('.header')
-    header.style.background = 'red';
-    
-    //assignment 3
+    //Give the third class an id of "last" and change the content of the p-tag to a reversed string
     let lastDiv = document.querySelector('#last');
     let para = lastDiv.querySelector('p')
     newPara = para.split('').reverse().join('');
