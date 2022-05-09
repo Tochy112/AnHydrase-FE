@@ -4,98 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <nav>
-            <ul>
-                <a href = "#"> Home</a>
-                <a href = "#"> About</a>
-                <a href = "#"> Contact</a>        
-            </ul>
-        </nav>
-        <h1 id="start"> Hi!<br> This  is Talk2Her Official Website</h1>
-<!--         <h1> Hello!<br> This  is Anhydrase Tech</h1>
-        <h1> Yo!<br> I'm a Tech Ninja!</h1> -->
-         <img class ="image" src="./thb.png" >
-        
-<!-- Get the parent class and change the h3 elements to "About Us" -->
-<!--  Give the third class an id of "last" and change the content of the p-tag to a reversed string -->
-    </header>
-    <div  class="parent">
-        <div id="try">
-            <div class="first">
-                <h3> Who we are</h3>
-                <picture>
-                    <img  src="images/mkt.jpg">
-                </picture>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Sapiente voluptates iste excepturi quos, itaque consequatur?
-                    Aliquam totam delectus, unde, assumenda fugit sed a, 
-                    optio velit ducimus veritatis reiciendis deleniti voluptate.
-                    
-                </p>
-            </div>
-            <div class="second">
-                <h3> What we Do</h3>
-                <picture>
-                    <img  src="images/mkt.jpg">
-                </picture>
-                <p>This is the second column
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Sapiente voluptates iste excepturi quos, itaque consequatur?
-                    Aliquam totam delectus, unde, assumenda fugit sed a, 
-                    optio velit ducimus veritatis reiciendis deleniti voluptate.
-                </p>
+    <div class="container">
+        <!-- HEADER TAGS -->
+        <!-- you can either use the tag directly or you use it as class names -->
+        <h1>H1 Header tag</h1>
+        <h2>H2 Header tag</h2>
+        <p class="h3">p tag with h3 class</p>
 
-            </div>
-            <div class="third" id="last">
-                <h3 class="head"> Our Outreach</h3>
-                <picture>
-                    <img  src="images/mkt.jpg">
-                </picture>
-                <p > This is the third
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Sapiente voluptates iste excepturi quos, itaque consequatur?
-                    Aliquam totam delectus, unde, assumenda fugit sed a, 
-                    optio velit ducimus veritatis reiciendis deleniti voluptate.
-                </p>
+        <!-- LEAD -->
+        <!-- makes a paragraph stand out by adding lead as the class -->
+        <p class="lead">A lead paragraph</p>
 
-            </div>
+        <!-- INLINE TEXT ELEMENTS -->
+
+        <!--mark tag highlihts the word or sentence its used on -->
+        <p> this is a <mark>highlighted</mark> sentence </p>
+
+        <!-- u tag underlines the word/sentence -->
+        <p><u>This is an underlined sentence</u></p>
         
-            
-        </div>
-      
+        <!-- small tag reduces the font size and makes it a fine print -->
+        <p><small>This line of text is meant to be treated as fine print.</small></p>
+
+        <!-- strong tag acts like the b tag both adds boldness to the text -->
+        <p><strong>This line rendered as bold text.</strong></p>
+
+        <!-- em tag adds italic styling to a text just like the i tag -->
+        <p><em>This line rendered as italicized text.</em></p>
+
+        <!-- ins tag acts as an addition to the document -->
+        <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+
+        <!-- BLOCKQOUTES -->
+        <!-- using the blockqoute tag or class structures the text as a qoute -->
+        <blockquote class="blockquote">
+            <p>A well-known quote, contained in a blockquote element.</p>
+        </blockquote>
+
+        <!-- ALIGNMENT -->
+        <!-- using the (center, left, right) properties on a text aligns it to that direction -->
+        <p class="text-center">Paragraph aligned center</p>
+        <p class="text-right">Paragraph aligned right</p>
+        <p class="text-left">Paragraph aligned left</p>
     </div>
-       
-    <footer>
-        Thanks for coming 
-    </footer>
-
-
-
-<script>
-
-    //CSS DOM
-    let header = document.querySelector('.header')
-    header.style.background = 'red';
-
-   
-    //PREVIOUS ASSIGNMENT
-
-    //Get the parent class and change the h3 elements to "About Us" 
-    let parent = document.querySelector('.parent');
-    parent.querySelector('h3').innerHTML = 'about us';
-    
-    //Give the third class an id of "last" and change the content of the p-tag to a reversed string
-    let lastDiv = document.querySelector('#last');
-    let para = lastDiv.querySelector('p')
-    newPara = para.split('').reverse().join('');
-        
-</script>
-
-
 </body>
 </html>
